@@ -1,150 +1,435 @@
-<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>从文处安</title><meta name="keywords" content="从文处安, 博客, 前端, 技术分享"><meta name="author" content="从文处安"><meta name="copyright" content="从文处安"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="从文处安, 博客, 前端, 技术分享">
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>从文处安</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="从文处安, 博客, 前端, 技术分享">
 <meta property="og:type" content="website">
 <meta property="og:title" content="从文处安">
 <meta property="og:url" content="https://gitee.com/JupiterBuer/page/2/index.html">
 <meta property="og:site_name" content="从文处安">
 <meta property="og:description" content="从文处安, 博客, 前端, 技术分享">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://img0.baidu.com/it/u=874202288,227256296&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=499">
 <meta property="article:author" content="从文处安">
 <meta property="article:tag" content="从文处安, 博客, 前端, 技术分享">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img0.baidu.com/it/u=874202288,227256296&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=499"><link rel="shortcut icon" href="/JupiterBuer/img/favicon.png"><link rel="canonical" href="https://gitee.com/JupiterBuer/page/2/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/JupiterBuer/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
-  root: '/JupiterBuer/',
-  algolia: undefined,
-  localSearch: undefined,
-  translate: undefined,
-  noticeOutdate: undefined,
-  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
-  copy: {
-    success: 'Copy successfully',
-    error: 'Copy error',
-    noSupport: 'The browser does not support'
-  },
-  relativeDate: {
-    homepage: false,
-    post: false
-  },
-  runtime: '',
-  date_suffix: {
-    just: 'Just',
-    min: 'minutes ago',
-    hour: 'hours ago',
-    day: 'days ago',
-    month: 'months ago'
-  },
-  copyright: undefined,
-  lightbox: 'fancybox',
-  Snackbar: undefined,
-  source: {
-    justifiedGallery: {
-      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
-      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
-    }
-  },
-  isPhotoFigcaption: false,
-  islazyload: false,
-  isAnchor: false
-}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
-  title: '从文处安',
-  isPost: false,
-  isHome: true,
-  isHighlightShrink: false,
-  isToc: false,
-  postUpdate: '2022-05-06 23:43:04'
-}</script><noscript><style type="text/css">
-  #nav {
-    opacity: 1
-  }
-  .justified-gallery img {
-    opacity: 1
-  }
-
-  #recent-posts time,
-  #post-meta time {
-    display: inline !important
-  }
-</style></noscript><script>(win=>{
-    win.saveToLocal = {
-      set: function setWithExpiry(key, value, ttl) {
-        if (ttl === 0) return
-        const now = new Date()
-        const expiryDay = ttl * 86400000
-        const item = {
-          value: value,
-          expiry: now.getTime() + expiryDay,
-        }
-        localStorage.setItem(key, JSON.stringify(item))
-      },
-
-      get: function getWithExpiry(key) {
-        const itemStr = localStorage.getItem(key)
-
-        if (!itemStr) {
-          return undefined
-        }
-        const item = JSON.parse(itemStr)
-        const now = new Date()
-
-        if (now.getTime() > item.expiry) {
-          localStorage.removeItem(key)
-          return undefined
-        }
-        return item.value
-      }
-    }
   
-    win.getScript = url => new Promise((resolve, reject) => {
-      const script = document.createElement('script')
-      script.src = url
-      script.async = true
-      script.onerror = reject
-      script.onload = script.onreadystatechange = function() {
-        const loadState = this.readyState
-        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-        script.onload = script.onreadystatechange = null
-        resolve()
-      }
-      document.head.appendChild(script)
-    })
+    <link rel="alternate" href="/JupiterBuer/atom.xml" title="从文处安" type="application/atom+xml">
   
-      win.activateDarkMode = function () {
-        document.documentElement.setAttribute('data-theme', 'dark')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
-        }
-      }
-      win.activateLightMode = function () {
-        document.documentElement.setAttribute('data-theme', 'light')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
-        }
-      }
-      const t = saveToLocal.get('theme')
+  
+    <link rel="shortcut icon" href="/JupiterBuer/favicon.png">
+  
+  
     
-          if (t === 'dark') activateDarkMode()
-          else if (t === 'light') activateLightMode()
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/JupiterBuer/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/JupiterBuer/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/JupiterBuer/" id="logo">从文处安</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
         
-      const asideStatus = saveToLocal.get('aside-status')
-      if (asideStatus !== undefined) {
-        if (asideStatus === 'hide') {
-          document.documentElement.classList.add('hide-aside')
-        } else {
-          document.documentElement.classList.remove('hide-aside')
-        }
-      }
+          <a class="main-nav-link" href="/JupiterBuer/">Home</a>
+        
+          <a class="main-nav-link" href="/JupiterBuer/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/JupiterBuer/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://gitee.com/JupiterBuer"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-H-003-HTML中常见的行内元素和块级元素" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/JupiterBuer/2022/04/06/H-003-HTML%E4%B8%AD%E5%B8%B8%E8%A7%81%E7%9A%84%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0%E5%92%8C%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0/" class="article-date">
+  <time class="dt-published" datetime="2022-04-06T14:53:58.029Z" itemprop="datePublished">2022-04-06</time>
+</a>
     
-    const detectApple = () => {
-      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
-        document.documentElement.classList.add('apple')
-      }
-    }
-    detectApple()
-    })(window)</script><meta name="generator" content="Hexo 6.1.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://img0.baidu.com/it/u=874202288,227256296&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=500&amp;h=499" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/JupiterBuer/archives/"><div class="headline">Articles</div><div class="length-num">14</div></a><a href="/JupiterBuer/tags/"><div class="headline">Tags</div><div class="length-num">8</div></a><a href="/JupiterBuer/categories/"><div class="headline">Categories</div><div class="length-num">5</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/JupiterBuer/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/JupiterBuer/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/JupiterBuer/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/JupiterBuer/">从文处安</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/JupiterBuer/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/JupiterBuer/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/JupiterBuer/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/JupiterBuer/2022/04/06/H-003-HTML%E4%B8%AD%E5%B8%B8%E8%A7%81%E7%9A%84%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0%E5%92%8C%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0/" title="HTML中常见的行内元素和块级元素"><img class="post_bg" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi1.hdslb.com%2Fbfs%2Farchive%2F4a5dfb1175c266316ac55b539d5783e93b0dbbe8.jpg&amp;refer=http%3A%2F%2Fi1.hdslb.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=auto?sec=1651384204&amp;t=7855edaf15a38f67e882deb31bfca6c2" onerror="this.onerror=null;this.src='/JupiterBuer/img/404.jpg'" alt="HTML中常见的行内元素和块级元素"></a></div><div class="recent-post-info"><a class="article-title" href="/JupiterBuer/2022/04/06/H-003-HTML%E4%B8%AD%E5%B8%B8%E8%A7%81%E7%9A%84%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0%E5%92%8C%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0/" title="HTML中常见的行内元素和块级元素">HTML中常见的行内元素和块级元素</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-04-06T14:53:58.029Z" title="Created 2022-04-06 22:53:58">2022-04-06</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-05-05T05:43:28.275Z" title="Updated 2022-05-05 13:43:28">2022-05-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/JupiterBuer/categories/HTML5/">HTML5</a></span></div><div class="content">前端面试之HTML常见行内元素和块级元素。</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/JupiterBuer/2022/04/04/JS-008-JavaScript%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" title="JavaScript的数据类型"><img class="post_bg" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg2.ctoutiao.com%2Fuploads%2F2020%2F03%2F23%2F1584960099168856.jpeg&amp;refer=http%3A%2F%2Fimg2.ctoutiao.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=auto?sec=1651673232&amp;t=39e97c58669dd8f2c1c2d39b30b43433" onerror="this.onerror=null;this.src='/JupiterBuer/img/404.jpg'" alt="JavaScript的数据类型"></a></div><div class="recent-post-info"><a class="article-title" href="/JupiterBuer/2022/04/04/JS-008-JavaScript%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" title="JavaScript的数据类型">JavaScript的数据类型</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-04-04T14:03:50.722Z" title="Created 2022-04-04 22:03:50">2022-04-04</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-05-05T05:43:47.985Z" title="Updated 2022-05-05 13:43:47">2022-05-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/JupiterBuer/categories/JavaScript/">JavaScript</a></span></div><div class="content">Javascript 中不同的数据类型区</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/JupiterBuer/2022/04/01/Python-001-numpy/" title="numpy中“*”和dot()的区别"><img class="post_bg" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic1.zhimg.com%2Fv2-1fd93f5ea8441aaa8ec4f011efb82491_r.jpg&amp;refer=http%3A%2F%2Fpic1.zhimg.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=auto?sec=1651388492&amp;t=01cb0b3b60093936a04ebecef6b282ec" onerror="this.onerror=null;this.src='/JupiterBuer/img/404.jpg'" alt="numpy中“*”和dot()的区别"></a></div><div class="recent-post-info"><a class="article-title" href="/JupiterBuer/2022/04/01/Python-001-numpy/" title="numpy中“*”和dot()的区别">numpy中“*”和dot()的区别</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-04-01T06:42:11.760Z" title="Created 2022-04-01 14:42:11">2022-04-01</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-05-05T05:43:53.631Z" title="Updated 2022-05-05 13:43:53">2022-05-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/JupiterBuer/categories/Pthon/">Pthon</a></span></div><div class="content">numpy中“*”和dot()的区别</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/JupiterBuer/2022/03/31/H-001-HTML5%E6%96%B0%E7%89%B9%E6%80%A7/" title="HTML5新特性"><img class="post_bg" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi1.hdslb.com%2Fbfs%2Farchive%2F4a5dfb1175c266316ac55b539d5783e93b0dbbe8.jpg&amp;refer=http%3A%2F%2Fi1.hdslb.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=auto?sec=1651384204&amp;t=7855edaf15a38f67e882deb31bfca6c2" onerror="this.onerror=null;this.src='/JupiterBuer/img/404.jpg'" alt="HTML5新特性"></a></div><div class="recent-post-info"><a class="article-title" href="/JupiterBuer/2022/03/31/H-001-HTML5%E6%96%B0%E7%89%B9%E6%80%A7/" title="HTML5新特性">HTML5新特性</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-03-31T10:44:19.417Z" title="Created 2022-03-31 18:44:19">2022-03-31</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-05-05T05:43:13.307Z" title="Updated 2022-05-05 13:43:13">2022-05-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/JupiterBuer/categories/HTML5/">HTML5</a></span></div><div class="content">HTML5 是最新的 HTML 标准，HTML5 拥有新的语义、图形以及多媒体元素；HTML5 提供的新元素和新的 API 简化了 web 应用程序的搭建。</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/JupiterBuer/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/JupiterBuer/">1</a><span class="page-number current">2</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://img0.baidu.com/it/u=874202288,227256296&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=500&amp;h=499" onerror="this.onerror=null;this.src='/JupiterBuer/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">从文处安</div><div class="author-info__description">从文处安, 博客, 前端, 技术分享</div></div><div class="card-info-data site-data is-center"><a href="/JupiterBuer/archives/"><div class="headline">Articles</div><div class="length-num">14</div></a><a href="/JupiterBuer/tags/"><div class="headline">Tags</div><div class="length-num">8</div></a><a href="/JupiterBuer/categories/"><div class="headline">Categories</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Jupiterbuer/Jupiterbuer.github.io"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">学习终将成为生命的一部分</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/JupiterBuer/2022/05/05/JS-009-%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95/" title="JavaScript的数组方法"><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg2.ctoutiao.com%2Fuploads%2F2020%2F03%2F23%2F1584960099168856.jpeg&amp;refer=http%3A%2F%2Fimg2.ctoutiao.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=auto?sec=1651673232&amp;t=39e97c58669dd8f2c1c2d39b30b43433" onerror="this.onerror=null;this.src='/JupiterBuer/img/404.jpg'" alt="JavaScript的数组方法"/></a><div class="content"><a class="title" href="/JupiterBuer/2022/05/05/JS-009-%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95/" title="JavaScript的数组方法">JavaScript的数组方法</a><time datetime="2022-05-05T09:05:51.653Z" title="Created 2022-05-05 17:05:51">2022-05-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/JupiterBuer/2022/05/04/JS-007-JS%E4%B8%AD%E7%9A%84%E9%97%AD%E5%8C%85/" title="JavaScript-闭包"><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg2.ctoutiao.com%2Fuploads%2F2020%2F03%2F23%2F1584960099168856.jpeg&amp;refer=http%3A%2F%2Fimg2.ctoutiao.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=auto?sec=1651673232&amp;t=39e97c58669dd8f2c1c2d39b30b43433" onerror="this.onerror=null;this.src='/JupiterBuer/img/404.jpg'" alt="JavaScript-闭包"/></a><div class="content"><a class="title" href="/JupiterBuer/2022/05/04/JS-007-JS%E4%B8%AD%E7%9A%84%E9%97%AD%E5%8C%85/" title="JavaScript-闭包">JavaScript-闭包</a><time datetime="2022-05-04T15:00:06.066Z" title="Created 2022-05-04 23:00:06">2022-05-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/JupiterBuer/2022/04/26/JS-006-JavaScript%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E6%A0%88/" title="JavaScript数据结构-栈"><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg2.ctoutiao.com%2Fuploads%2F2020%2F03%2F23%2F1584960099168856.jpeg&amp;refer=http%3A%2F%2Fimg2.ctoutiao.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=auto?sec=1651673232&amp;t=39e97c58669dd8f2c1c2d39b30b43433" onerror="this.onerror=null;this.src='/JupiterBuer/img/404.jpg'" alt="JavaScript数据结构-栈"/></a><div class="content"><a class="title" href="/JupiterBuer/2022/04/26/JS-006-JavaScript%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E6%A0%88/" title="JavaScript数据结构-栈">JavaScript数据结构-栈</a><time datetime="2022-04-26T14:09:40.351Z" title="Created 2022-04-26 22:09:40">2022-04-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/JupiterBuer/2022/04/25/JS-003-JavaScript%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%89%E7%A7%8D%E6%96%B9%E5%BC%8F/" title="JavaScript创建对象的三种方式"><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg2.ctoutiao.com%2Fuploads%2F2020%2F03%2F23%2F1584960099168856.jpeg&amp;refer=http%3A%2F%2Fimg2.ctoutiao.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=auto?sec=1651673232&amp;t=39e97c58669dd8f2c1c2d39b30b43433" onerror="this.onerror=null;this.src='/JupiterBuer/img/404.jpg'" alt="JavaScript创建对象的三种方式"/></a><div class="content"><a class="title" href="/JupiterBuer/2022/04/25/JS-003-JavaScript%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%89%E7%A7%8D%E6%96%B9%E5%BC%8F/" title="JavaScript创建对象的三种方式">JavaScript创建对象的三种方式</a><time datetime="2022-04-25T09:09:13.356Z" title="Created 2022-04-25 17:09:13">2022-04-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/JupiterBuer/2022/04/21/JS-005-JavaScript%E4%B8%ADNull%E5%92%8CUndefind%E7%9A%84%E5%8C%BA%E5%88%AB/" title="JavaScript中Null和Undefind的区别"><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi1.hdslb.com%2Fbfs%2Farchive%2F4a5dfb1175c266316ac55b539d5783e93b0dbbe8.jpg&amp;refer=http%3A%2F%2Fi1.hdslb.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=auto?sec=1651384204&amp;t=7855edaf15a38f67e882deb31bfca6c2" onerror="this.onerror=null;this.src='/JupiterBuer/img/404.jpg'" alt="JavaScript中Null和Undefind的区别"/></a><div class="content"><a class="title" href="/JupiterBuer/2022/04/21/JS-005-JavaScript%E4%B8%ADNull%E5%92%8CUndefind%E7%9A%84%E5%8C%BA%E5%88%AB/" title="JavaScript中Null和Undefind的区别">JavaScript中Null和Undefind的区别</a><time datetime="2022-04-21T08:47:31.114Z" title="Created 2022-04-21 16:47:31">2022-04-21</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
-            <i class="fas fa-folder-open"></i>
-            <span>Categories</span>
-            
-            </div>
-            <ul class="card-category-list" id="aside-cat-list">
-            <li class="card-category-list-item "><a class="card-category-list-link" href="/JupiterBuer/categories/CSS/"><span class="card-category-list-name">CSS</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/JupiterBuer/categories/CSS3/"><span class="card-category-list-name">CSS3</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/JupiterBuer/categories/HTML5/"><span class="card-category-list-name">HTML5</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/JupiterBuer/categories/JavaScript/"><span class="card-category-list-name">JavaScript</span><span class="card-category-list-count">8</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/JupiterBuer/categories/Pthon/"><span class="card-category-list-name">Pthon</span><span class="card-category-list-count">1</span></a></li>
-            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/JupiterBuer/tags/CSS3/" style="font-size: 1.1em; color: #999">CSS3</a> <a href="/JupiterBuer/tags/HTML5/" style="font-size: 1.3em; color: #99a1ac">HTML5</a> <a href="/JupiterBuer/tags/JavaScript/" style="font-size: 1.4em; color: #99a5b6">JavaScript</a> <a href="/JupiterBuer/tags/Pthon/" style="font-size: 1.1em; color: #999">Pthon</a> <a href="/JupiterBuer/tags/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/" style="font-size: 1.2em; color: #999da3">前端学习</a> <a href="/JupiterBuer/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 1.1em; color: #999">数据结构</a> <a href="/JupiterBuer/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" style="font-size: 1.1em; color: #999">机器学习</a> <a href="/JupiterBuer/tags/%E9%9D%A2%E8%AF%95/" style="font-size: 1.5em; color: #99a9bf">面试</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/JupiterBuer/archives/2022/05/"><span class="card-archive-list-date">May 2022</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/JupiterBuer/archives/2022/04/"><span class="card-archive-list-date">April 2022</span><span class="card-archive-list-count">11</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/JupiterBuer/archives/2022/03/"><span class="card-archive-list-date">March 2022</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">14</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-05-06T15:43:04.185Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2018 - 2022 By 从文处安</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@4.2.0/source/js/utils.min.js"></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@4.2.0/source/js/main.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+  <div class="article-category">
+    <a class="article-category-link" href="/JupiterBuer/categories/HTML5/">HTML5</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/JupiterBuer/2022/04/06/H-003-HTML%E4%B8%AD%E5%B8%B8%E8%A7%81%E7%9A%84%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0%E5%92%8C%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0/">HTML中常见的行内元素和块级元素</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="前端面试之HTML常见行内元素和块级元素"><a href="#前端面试之HTML常见行内元素和块级元素" class="headerlink" title="前端面试之HTML常见行内元素和块级元素"></a>前端面试之HTML常见行内元素和块级元素</h1><h2 id="行内元素"><a href="#行内元素" class="headerlink" title="行内元素"></a>行内元素</h2><ul>
+<li>行内元素<br>特点：不能设置宽和高，多个元素共享一行，占满是会换行</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;#&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">textarea</span> <span class="attr">name</span>=<span class="string">&quot;&quot;</span> <span class="attr">id</span>=<span class="string">&quot;&quot;</span> <span class="attr">cols</span>=<span class="string">&quot;30&quot;</span> <span class="attr">rows</span>=<span class="string">&quot;10&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">name</span>=<span class="string">&quot;&quot;</span> <span class="attr">id</span>=<span class="string">&quot;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>块级元素<br>特点：可以设置宽和高，一个元素占满一整行</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h3</span>&gt;</span><span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>inline-block<br>特点：可以设置宽和高，多个元素占有一行，占满时候换行</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">    <span class="selector-tag">div</span> &#123;</span></span><br><span class="line"><span class="language-css">        <span class="comment">/* 块级元素转换为行内块元素 */</span></span></span><br><span class="line"><span class="language-css">        <span class="attribute">display</span>: inline-block;</span></span><br><span class="line"><span class="language-css">    &#125;</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://gitee.com/JupiterBuer/2022/04/06/H-003-HTML%E4%B8%AD%E5%B8%B8%E8%A7%81%E7%9A%84%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0%E5%92%8C%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0/" data-id="cl2ujrsvy0006rq7s5o4he7j1" data-title="HTML中常见的行内元素和块级元素" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/JupiterBuer/tags/HTML5/" rel="tag">HTML5</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/JupiterBuer/tags/%E9%9D%A2%E8%AF%95/" rel="tag">面试</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-JS-008-JavaScript数据类型" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/JupiterBuer/2022/04/04/JS-008-JavaScript%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" class="article-date">
+  <time class="dt-published" datetime="2022-04-04T14:03:50.722Z" itemprop="datePublished">2022-04-04</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/JupiterBuer/categories/JavaScript/">JavaScript</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/JupiterBuer/2022/04/04/JS-008-JavaScript%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">JavaScript的数据类型</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="JavaScript数据类型"><a href="#JavaScript数据类型" class="headerlink" title="JavaScript数据类型"></a>JavaScript数据类型</h1><h2 id="JavaScript中什么是基本数据类型？"><a href="#JavaScript中什么是基本数据类型？" class="headerlink" title="JavaScript中什么是基本数据类型？"></a>JavaScript中什么是基本数据类型？</h2><p>基本数据类型：</p>
+<ul>
+<li>Number</li>
+<li>String</li>
+<li>Boolean</li>
+<li>Null</li>
+<li>Undefined</li>
+<li>Symbol</li>
+<li>biglnt</li>
+</ul>
+<h2 id="JavaScript中什么是引用数据类型？"><a href="#JavaScript中什么是引用数据类型？" class="headerlink" title="JavaScript中什么是引用数据类型？"></a>JavaScript中什么是引用数据类型？</h2><p>引用数据类型统称为Object<br>细分：</p>
+<ul>
+<li>Object</li>
+<li>Array</li>
+<li>Date</li>
+<li>Function</li>
+<li>RegExp</li>
+</ul>
+<h2 id="JavaScript中各个类型的数据如何储存？"><a href="#JavaScript中各个类型的数据如何储存？" class="headerlink" title="JavaScript中各个类型的数据如何储存？"></a>JavaScript中各个类型的数据如何储存？</h2><p>1、基本数据类型直接存储在栈中；<br>2、引用数据类型存储在堆中，在栈中保存数据的引用地址，此引用地址指向对应的数据，以便快速查找到堆内存中的对象。<br>注：栈内存自动分配内存，而堆内存是动态分布内存，不会自动释放。故每次使用完对象的时候都要将它设置为nul，从而减少无用内存的损耗。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://gitee.com/JupiterBuer/2022/04/04/JS-008-JavaScript%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" data-id="cl2ujrsws000rrq7sfakv3nyr" data-title="JavaScript的数据类型" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/JupiterBuer/tags/JavaScript/" rel="tag">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/JupiterBuer/tags/%E9%9D%A2%E8%AF%95/" rel="tag">面试</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Python-001-numpy" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/JupiterBuer/2022/04/01/Python-001-numpy/" class="article-date">
+  <time class="dt-published" datetime="2022-04-01T06:42:11.760Z" itemprop="datePublished">2022-04-01</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/JupiterBuer/categories/Pthon/">Pthon</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/JupiterBuer/2022/04/01/Python-001-numpy/">numpy中“*”和dot()的区别</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="1、乘法运算中的”-”"><a href="#1、乘法运算中的”-”" class="headerlink" title="1、乘法运算中的”*”"></a>1、乘法运算中的”*”</h2><ul>
+<li>数组元素按位相乘</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> numpy</span><br><span class="line"></span><br><span class="line">A = np.array([[<span class="number">1</span>,<span class="number">2</span>],[<span class="number">3</span>,<span class="number">4</span>]])</span><br><span class="line">X = np.array([[<span class="number">1</span>,<span class="number">2</span>],[<span class="number">3</span>,<span class="number">4</span>]])</span><br><span class="line">B = A*X</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(B)</span><br><span class="line"></span><br><span class="line"><span class="comment">#输出结果</span></span><br><span class="line">B = [[ <span class="number">1</span>  <span class="number">4</span>]</span><br><span class="line"> [ <span class="number">9</span> <span class="number">16</span>]]</span><br></pre></td></tr></table></figure>
+<h2 id="2、乘法运算中的dot"><a href="#2、乘法运算中的dot" class="headerlink" title="2、乘法运算中的dot()"></a>2、乘法运算中的dot()</h2><ul>
+<li>按照矩阵乘法计算</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> numpy</span><br><span class="line"></span><br><span class="line">A = np.array([[<span class="number">1</span>,<span class="number">2</span>],[<span class="number">3</span>,<span class="number">4</span>]])</span><br><span class="line">X = np.array([[<span class="number">1</span>,<span class="number">2</span>],[<span class="number">3</span>,<span class="number">4</span>]])</span><br><span class="line"><span class="comment"># 点乘计算</span></span><br><span class="line"><span class="comment"># B = A*X</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># dot()计算</span></span><br><span class="line">B = np.dot(A,X)</span><br><span class="line"><span class="built_in">print</span>(B)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出结果</span></span><br><span class="line">B = [[ <span class="number">7</span> <span class="number">10</span>]</span><br><span class="line"> [<span class="number">15</span> <span class="number">22</span>]]</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://gitee.com/JupiterBuer/2022/04/01/Python-001-numpy/" data-id="cl2ujrswv000urq7s9nu7h12r" data-title="numpy中“*”和dot()的区别" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/JupiterBuer/tags/Pthon/" rel="tag">Pthon</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/JupiterBuer/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="tag">机器学习</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-H-001-HTML5新特性" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/JupiterBuer/2022/03/31/H-001-HTML5%E6%96%B0%E7%89%B9%E6%80%A7/" class="article-date">
+  <time class="dt-published" datetime="2022-03-31T10:44:19.417Z" itemprop="datePublished">2022-03-31</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/JupiterBuer/categories/HTML5/">HTML5</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/JupiterBuer/2022/03/31/H-001-HTML5%E6%96%B0%E7%89%B9%E6%80%A7/">HTML5新特性</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="HTML5新特性"><a href="#HTML5新特性" class="headerlink" title="HTML5新特性"></a>HTML5新特性</h2><p>HTML5 是最新的 HTML 标准。</p>
+<p>HTML5 是专门为承载丰富的 web 内容而设计的，并且无需额外插件。</p>
+<p>HTML5 拥有新的语义、图形以及多媒体元素。</p>
+<p>HTML5 提供的新元素和新的 API 简化了 web 应用程序的搭建。</p>
+<p>HTML5 是跨平台的，被设计为在不同类型的硬件（PC、平板、手机、电视机等等）之上运行。</p>
+<p>弥补以前的不足，增加<strong>新的标签</strong>、<strong>新的表单</strong>和<strong>新的表单属性</strong>等。</p>
+<p>兼容性问题：基本需要**IE9+**以上的浏览器才支持。</p>
+<p>优势：不考虑兼容性的问题可以尽量使用新特性，优化代码。</p>
+<h3 id="1-新增语义化标签"><a href="#1-新增语义化标签" class="headerlink" title="1. 新增语义化标签"></a>1. 新增语义化标签</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 头部标签 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">“header”</span>&gt;</span> <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 导航栏标签 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">“nav”</span>&gt;</span> <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 内容标签  --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;article&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 侧边栏标签 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;aside&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 内容标签 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">“content”</span>&gt;</span> <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 尾部标签  --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">“footer”</span>&gt;</span> <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-新增多媒体标签"><a href="#2-新增多媒体标签" class="headerlink" title="2. 新增多媒体标签"></a>2. 新增多媒体标签</h3><ul>
+<li>音频标签<br>支持三种格式：MP3、Wav、Ogg</li>
+<li>视频标签<br>支持三种格式：MP4、WebM、Ogg</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 音频标签 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">src</span>=<span class="string">&quot;#&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 视频标签 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">src</span>=<span class="string">&quot;#&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-新增input类型"><a href="#3-新增input类型" class="headerlink" title="3. 新增input类型"></a>3. 新增input类型</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 限制用户输入为email类型 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;email&quot;</span> <span class="attr">name</span>=<span class="string">&quot;&quot;</span> <span class="attr">id</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 限制用户输入为URL类型 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;url&quot;</span> <span class="attr">name</span>=<span class="string">&quot;&quot;</span> <span class="attr">id</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 限制用户输入为日期类型 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;date&quot;</span> <span class="attr">name</span>=<span class="string">&quot;&quot;</span> <span class="attr">id</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 限制用户输入为时间类型 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;time&quot;</span> <span class="attr">name</span>=<span class="string">&quot;&quot;</span> <span class="attr">id</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 限制用户输入为月类型 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;month&quot;</span> <span class="attr">name</span>=<span class="string">&quot;&quot;</span> <span class="attr">id</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 限制用户输入为周类型 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;week&quot;</span> <span class="attr">name</span>=<span class="string">&quot;&quot;</span> <span class="attr">id</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 限制用户输入为数字类型 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;number&quot;</span> <span class="attr">name</span>=<span class="string">&quot;&quot;</span> <span class="attr">id</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 限制用户输入为手机号码期类型 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">name</span>=<span class="string">&quot;&quot;</span> <span class="attr">id</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 搜索框类型 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;search&quot;</span> <span class="attr">name</span>=<span class="string">&quot;&quot;</span> <span class="attr">id</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 颜色选择表单类型 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;color&quot;</span> <span class="attr">name</span>=<span class="string">&quot;&quot;</span> <span class="attr">id</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="4-新增表单属性"><a href="#4-新增表单属性" class="headerlink" title="4. 新增表单属性"></a>4. 新增表单属性</h3><pre><code>待补充
+</code></pre>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://gitee.com/JupiterBuer/2022/03/31/H-001-HTML5%E6%96%B0%E7%89%B9%E6%80%A7/" data-id="cl2ujrsvw0005rq7s5azbgqrx" data-title="HTML5新特性" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/JupiterBuer/tags/HTML5/" rel="tag">HTML5</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/JupiterBuer/tags/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/" rel="tag">前端学习</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/JupiterBuer/">&laquo; Prev</a><a class="page-number" href="/JupiterBuer/">1</a><span class="page-number current">2</span>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/JupiterBuer/categories/CSS/">CSS</a></li><li class="category-list-item"><a class="category-list-link" href="/JupiterBuer/categories/CSS3/">CSS3</a></li><li class="category-list-item"><a class="category-list-link" href="/JupiterBuer/categories/HTML5/">HTML5</a></li><li class="category-list-item"><a class="category-list-link" href="/JupiterBuer/categories/JavaScript/">JavaScript</a></li><li class="category-list-item"><a class="category-list-link" href="/JupiterBuer/categories/Pthon/">Pthon</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/JupiterBuer/tags/CSS3/" rel="tag">CSS3</a></li><li class="tag-list-item"><a class="tag-list-link" href="/JupiterBuer/tags/HTML5/" rel="tag">HTML5</a></li><li class="tag-list-item"><a class="tag-list-link" href="/JupiterBuer/tags/JavaScript/" rel="tag">JavaScript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/JupiterBuer/tags/Pthon/" rel="tag">Pthon</a></li><li class="tag-list-item"><a class="tag-list-link" href="/JupiterBuer/tags/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/" rel="tag">前端学习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/JupiterBuer/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag">数据结构</a></li><li class="tag-list-item"><a class="tag-list-link" href="/JupiterBuer/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="tag">机器学习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/JupiterBuer/tags/%E9%9D%A2%E8%AF%95/" rel="tag">面试</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/JupiterBuer/tags/CSS3/" style="font-size: 10px;">CSS3</a> <a href="/JupiterBuer/tags/HTML5/" style="font-size: 15px;">HTML5</a> <a href="/JupiterBuer/tags/JavaScript/" style="font-size: 17.5px;">JavaScript</a> <a href="/JupiterBuer/tags/Pthon/" style="font-size: 10px;">Pthon</a> <a href="/JupiterBuer/tags/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/" style="font-size: 12.5px;">前端学习</a> <a href="/JupiterBuer/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 10px;">数据结构</a> <a href="/JupiterBuer/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" style="font-size: 10px;">机器学习</a> <a href="/JupiterBuer/tags/%E9%9D%A2%E8%AF%95/" style="font-size: 20px;">面试</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/JupiterBuer/archives/2022/05/">May 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/JupiterBuer/archives/2022/04/">April 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/JupiterBuer/archives/2022/03/">March 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/JupiterBuer/2022/05/05/JS-009-%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95/">JavaScript的数组方法</a>
+          </li>
+        
+          <li>
+            <a href="/JupiterBuer/2022/05/04/JS-007-JS%E4%B8%AD%E7%9A%84%E9%97%AD%E5%8C%85/">JavaScript-闭包</a>
+          </li>
+        
+          <li>
+            <a href="/JupiterBuer/2022/04/26/JS-006-JavaScript%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E6%A0%88/">JavaScript数据结构-栈</a>
+          </li>
+        
+          <li>
+            <a href="/JupiterBuer/2022/04/25/JS-003-JavaScript%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%89%E7%A7%8D%E6%96%B9%E5%BC%8F/">JavaScript创建对象的三种方式</a>
+          </li>
+        
+          <li>
+            <a href="/JupiterBuer/2022/04/21/JS-005-JavaScript%E4%B8%ADNull%E5%92%8CUndefind%E7%9A%84%E5%8C%BA%E5%88%AB/">JavaScript中Null和Undefind的区别</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 从文处安<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/JupiterBuer/" class="mobile-nav-link">Home</a>
+  
+    <a href="/JupiterBuer/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/JupiterBuer/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/JupiterBuer/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/JupiterBuer/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
